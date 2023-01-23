@@ -1,0 +1,20 @@
+@media screen and (max-width:465px){
+    #imagen-inicio {
+        background-image: url(../src/img/imageninicio.png);
+    }
+
+    #moviesapp {
+        display: none;
+    }
+}
+
+@media screen and (min-width:465px){
+
+    #moviesapp {
+        background-image: url(../src/img/movies-app.jpg);
+    }
+
+    #imagen-inicio {
+        display: none;
+    }
+}
