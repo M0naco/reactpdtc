@@ -14,7 +14,7 @@ export const SearchPage = () => {
   const location = useLocation();
   const { q = "" } = queryString.parse(location.search);
 
-  const { loading } = useContext(AppContext);
+  const { loading, setLoading } = useContext(AppContext);
 
   const screenLoading = JSON.stringify(loading);
 

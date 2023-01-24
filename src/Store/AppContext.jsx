@@ -28,7 +28,9 @@ const AppProvider = ({ children }) => {
         "https://api.themoviedb.org/3/movie/popular?api_key=3f201358e5207ff08e14581f00223b79";
 
       const result = await axios.get(url).then((res) => {
-        setLoading(!loading);
+        setTimeout(() => {
+          setLoading(!loading);
+        }, 1000);
         return res;
       });
       if (!getData()) {
